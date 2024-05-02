@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+void sort(int&p, int&q) {
+if(p>=q) 
+{
+p=p+q;
+q=p-q;
+p=p-q;
+cout<<"your sorted number is:"<<endl;
+cout<< "p:" <<p<<endl;
+cout << "q:" <<q<< endl;
+}
+else{
+cout << "your number is already sorted" << endl;
+}
+};
+int main() {
+int a, b;
+cout << "enter two number" << endl;
+cin>>a>>b;
+sort(a, b);
+return 0;
+}
